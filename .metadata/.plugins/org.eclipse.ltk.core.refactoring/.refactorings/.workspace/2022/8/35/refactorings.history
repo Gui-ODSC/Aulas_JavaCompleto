@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IntrducaoOrientaObjetos&apos; to &apos;Construtores&apos;" description="Rename resource &apos;IntrducaoOrientaObjetos&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/IntrducaoOrientaObjetos" name="Construtores" stamp="1661624845079" updateReferences="true"/>
+</session>

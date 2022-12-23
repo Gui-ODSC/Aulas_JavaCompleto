@@ -1,0 +1,40 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String args[]) {
+		Locale.setDefault(Locale.US);
+		Scanner ent = new Scanner(System.in);
+		
+		//Entrada com dados do departamento
+		System.out.print("Enter department's name: ");
+		String dep = ent.nextLine(); 
+		
+		//Entrada com dados do Trabalhador 
+		System.out.println("Enter worker data: ");
+		System.out.print("Name: ");
+		String name = ent.nextLine();
+		System.out.print("Level: ");
+		String level = ent.nextLine();
+		System.out.print("Base Salary: ");
+		double salario = ent.nextDouble();
+		
+		//Quantidade de contratos do trabalhador
+		System.out.print("How many contracts to this worker? ");
+		int num_contrac = ent.nextInt();
+		
+		//Laço de preenchimento de contratos
+		for (int i = 0; i < num_contrac; i++) {
+			System.out.println("Enter contract #" + (i+1) + " data: ");
+			System.out.print("Date (DD/MM/YYYY): ");
+			ent.nextLine();
+			String data = ent.nextLine();
+			System.out.print("Value per hour: ");
+			double valor_hora = ent.nextDouble();
+			System.out.print("Duration: ");
+			int duracao = ent.nextInt();
+		}
+	}
+}

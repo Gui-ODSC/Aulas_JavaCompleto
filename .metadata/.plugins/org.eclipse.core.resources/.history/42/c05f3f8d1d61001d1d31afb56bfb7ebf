@@ -1,0 +1,15 @@
+package CalculosDataHora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class CalculosDataHora {
+	public static void main(String[] args) {
+		LocalDate data4 = LocalDate.parse("2022-07-20");
+		LocalDateTime data5 = LocalDateTime.parse("2022-07-20T14:45:42");
+		Instant data6 = Instant.parse("2022-07-20T14:45:42Z");
+		
+		LocalDate pastWeekLocalDate = data4.minusDays(7);
+	}
+}

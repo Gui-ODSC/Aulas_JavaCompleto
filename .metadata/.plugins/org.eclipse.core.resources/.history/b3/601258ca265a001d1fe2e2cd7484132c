@@ -1,0 +1,19 @@
+package ConversaoLocalGlobal;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+
+public class ConversaoLocalGlobal {
+	public static void main(String[] args) {
+		//Para conversões de datas globais para locais é necessário informar o timezone
+		LocalDate data4 = LocalDate.parse("2022-07-20");
+		LocalDateTime data5 = LocalDateTime.parse("2022-07-20T14:45:42");
+		Instant data6 = Instant.parse("2022-07-20T14:45:42Z");
+		
+		for (String s : ZoneId.getAvailableZoneIds()) {//serve para acessar todas as id das zonas de fuso horário
+			System.out.println(s);
+		}
+	}
+}

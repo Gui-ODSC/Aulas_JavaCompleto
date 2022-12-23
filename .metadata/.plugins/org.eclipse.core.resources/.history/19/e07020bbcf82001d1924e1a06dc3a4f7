@@ -1,0 +1,26 @@
+package entities;
+
+import java.util.List;
+
+import entities.enums.WorkerLevel;
+
+public class Worker {
+	private String name;
+	private WorkerLevel level;
+	private Double baseSalary;
+	
+	//composição junto com os objetos que ele se relaciona
+	private Department department;//para 1(Relação UML)
+	private List<HourContract> contracts = new ArrayList<>();//para vários(relaçãoUML)
+	
+	public Worker() {
+		
+	}
+	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
+		this.name = name;
+		this.level = level;
+		this.baseSalary = baseSalary;
+		this.department = department;
+	}
+	
+}	
