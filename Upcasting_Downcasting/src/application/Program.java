@@ -17,6 +17,7 @@ public class Program {
 		Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
 		
 		//DOWNCASTING == converter objeto da superclasse para subclasse
+		//É necessário testar com "instanceof" se os objetos correspondem aos seus respectivos tipos
 		
 		BusinessAccount bacc4 = (BusinessAccount)acc2;//realizar casting de forma manual
 		bacc4.loan(100.0);
