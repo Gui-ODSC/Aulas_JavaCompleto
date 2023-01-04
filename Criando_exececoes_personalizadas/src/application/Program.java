@@ -42,7 +42,7 @@ public class Program {
 		catch (DomainException e) {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
-		catch (RuntimeException e) {
+		catch (RuntimeException e) {//exceção genérica que acusa qualquer erro que ocorra, evitando a quebra do programa
 			System.out.println("Unexpected erro!");
 		}
 	}
